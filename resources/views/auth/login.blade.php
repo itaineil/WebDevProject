@@ -4,8 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <!-- <h2 id = "WelcomePage" class = "wow swing text-center" wow-delay = "1.5s" data-wow-iteration = "3" >Welcome to Development Support Network</h2> !-->
-                <div class="card-header wow rubberBand" data-wow-iteration = "3">{{ __('Login') }}</div>
+                <div class="card-header wow rubberBand text-center" data-wow-iteration = "3">Login<span class="badge badge-pill badge-warning">../register on top navigation bar</span>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -53,11 +52,11 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary wow bounceInDown">
+                                <button type="submit" class="btn blue-gradient wow bounceInDown">
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link wow bounceInDown" href="{{ route('password.request') }}">
+                                <a class="btn btn-link wow bounceInDown" href="{{ route('password.request') }}" style="color: white;" id = "forgotPassword">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                             </div>

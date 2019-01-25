@@ -15,7 +15,7 @@
                             @csrf
 
                             <div class="form-group row">
-                            <label for="first_name" class="col-md-4 col-form-label text-md-right">Enter First Name</label><i class = "fa fa-file-signature fa fa-2x"></i>
+                            <label for="first_name" class="col-md-4 col-form-label text-md-right">Enter First Name</label><i class="fas fa-file-signature"></i>
 
                              <div class="col-md-6">
                                 <input id="first_name" type="text" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }} wow fadeInLeft" data-wow-duration = "1.2s" name="first_name" value="{{ old('first_name') }}" required autofocus> 
@@ -98,7 +98,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn blue-gradient">
                                     Add User
                                 </button>
                             </div>
@@ -114,7 +114,7 @@
 
                            <div class = "col-md-6">
                                 
-                                <a href = "{{ url('/users') }}" class = "btn btn-success btn-lg" id = "btnGoBack">Go Back</a>
+                                <a href = "{{ url('/users') }}" class = "btn btn-danger btn-rounded">Go Back</a>
 
 
                            </div>

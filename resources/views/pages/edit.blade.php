@@ -97,7 +97,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-success btn-lg">
+                                <button type="submit" class="btn blue-gradient">
                                     Update User
                                 </button>
                             </div>
@@ -113,7 +113,7 @@
 
                            <div class = "col-md-6">
                                 
-                                <a href = "{{ url('/users') }}" class = "btn btn-success btn-lg" id = "btnGoBack">Go Back</a>
+                                <a href = "{{ url('/users') }}" class = "btn btn-purple">Go Back</a>
 
 
                            </div>

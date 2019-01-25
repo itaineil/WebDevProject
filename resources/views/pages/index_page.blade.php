@@ -12,13 +12,10 @@
       @endif
   </div>
          <div class="col-md-12">
-            <div class="card">
+            <div class="card example z-depth-5">
                 <div class="card-header wow swing text-center" wow-delay = "1.5s" data-wow-iteration = "3"  id = "homeCard"><i class = "fa fa-list-ul fa-2x">
                 </i><h2>Users <span class="badge badge-pill badge-success">List</span></h2></div>
-
                     <hr>
-                    <!--div that will show current weather data from open weather api!-->
-                    <!--script file that will collect the data is in the public/js folder!-->
                     <div class = "container">
                     <div class="card-body">
 
@@ -41,40 +38,34 @@
                         <div class = "row">
                            
                            <div class = "col-md-6">
-                                <br>
                                 <a class = "btn btn-success btn-lg" id = "btnAddUser" href="{{ url('/users/create') }}">Add Another User</a>
 
                            </div>
 
+                           <br>
+
                            <div class = "col-md-6">
 
-                          
-                            
-                            </div>
-
-                            <!--
-                            <div class="form-group">
-                            <label for="searchUserByName" class = "wow jello" wow-delay = "12.4s" data-wow-iteration = "15"><i class = "fa fa-search fa-2x"></i>Search User By Name</label>
-                            <input type="email" class="form-control wow bounceIn" id="searchUserByName" aria-describedby="emailHelp" >
-                            </div>!-->
-
-                            <div class="form-group">
+                           <div class="form-group">
                             <label for="searchUserByName" class = "wow jello" wow-delay = "12.4s" data-wow-iteration = "15"><i class = "fa fa-search fa-2x"></i>Search User By Name</label>
                             <input type="email" class="form-control wow bounceIn" name = "searchByName" id = "searchUserByName">
                             </div>
-                            <div class="form-group">
-                            <label for="searchUserByName" class = "wow jello" wow-delay = "12.4s" data-wow-iteration = "15"><i class = "fa fa-search fa-2x"></i>Search By Name</label>
-                            <input type="name" class="form-control wow bounceIn" name = "searchBySurname" id = "searchUserByName">
+
+                            
                             </div>
-                            </div>
-                           <div class = "container">
+
+                           
+                            <br>
+
+                            
+                          <div class = "container">
                            <div class = "row">
 
-      <table class = "table">                        
+      <table class = "table table-hover table-responsive text-nowrap" id = "dtBasicExample" width = "100%" cellspacing="0">                        
       <thead>
       <tr>
-      <th scope="col">#</th>
-      <th scope="col">Hello</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
       <th scope="col">Surname</th>
       <th scope="col">Date</th>
       <th scope="col">Height</th>
@@ -93,14 +84,14 @@
       <td>{{$person->height}}</td>
       <td>{{$person->weight}}</td>
       <td>{{$person->eye_color}}</td>
-      <td><a href = '{{  url("/users/{$person->id}") }}' class = "btn btn-success btn-sm">View User</a></td>
-      <td><a href = '{{  url("/users/{$person->id}/edit") }}' class = "btn btn-success btn-sm">Update User</a></td>
+      <td><a href = '{{  url("/users/{$person->id}") }}' class = "btn aqua-gradient">View User</a></td>
+      <td><a href = '{{  url("/users/{$person->id}/edit") }}' class = "btn purple-gradient">Update User</a></td>
       <td><a href = '{{  url("/users/{$person->id}") }}'></a></td>
       <td>
     <form action="{{ route('users.destroy', $person->id)}}" method="post">
     @csrf
     @method('DELETE')
-    <button class="btn btn-danger btn btn-sm" type="submit">Delete User</button>
+    <button class="btn peach-gradient" type="submit">Delete User</button>
     </form>
     </td>
     </tr>

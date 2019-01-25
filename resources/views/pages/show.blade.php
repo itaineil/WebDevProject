@@ -63,7 +63,7 @@
 
                            <div class = "col-md-6">
                                 
-                                <a href = "{{ url('/users') }}" class = "btn btn-success btn-lg" id = "btnGoBack">Go Back</a>
+                                <a href = "{{ url('/users') }}" class = "btn peach-gradient">Go Back</a>
 
 
                            </div>

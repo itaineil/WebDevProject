@@ -7,14 +7,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Super Store</title>
     <!-- Scripts -->
-    <!--
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    !-->
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}" defer></script>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>!-->
     <!--axios to conect to external Apixu Api for Weather Data!-->
-    <!--
     <script src="{{ asset('js/script.js') }}"></script>
-    !-->
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/mdb.min.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script>
     new WOW().init();
@@ -31,7 +31,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link rel = "stylesheet" href = "https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     
 </head>
 <body>
